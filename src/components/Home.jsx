@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 "
+      className="h-full w-full bg-gradient-to-b from-black via-black to-gray-800 pt-32 md:pt-36"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className="flex flex-col justify-center h-full ">
-          <h2 className="text-4xl mt-36 lg:text-9xl font-bold text-white lg:mr-4 lg:mt-24">
-                <TypeAnimation
+          <h2 className="text-4xl md:text-9xl font-bold text-white md:mr-4 ">
+                <TypeAnimation className="my-56 md:py-0"
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
                     "I'm a Frontend Developer",
@@ -38,7 +38,7 @@ const Home = () => {
 
           <div>
             <Link
-              to="portfolio"
+              to="projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
